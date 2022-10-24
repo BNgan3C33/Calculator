@@ -35,10 +35,10 @@
             this.txtNo2 = new System.Windows.Forms.TextBox();
             this.txtResult = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btCong = new System.Windows.Forms.Button();
-            this.btTru = new System.Windows.Forms.Button();
-            this.btNhan = new System.Windows.Forms.Button();
             this.btChia = new System.Windows.Forms.Button();
+            this.btNhan = new System.Windows.Forms.Button();
+            this.btTru = new System.Windows.Forms.Button();
+            this.btCong = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,50 +101,54 @@
             this.groupBox1.Controls.Add(this.btCong);
             this.groupBox1.Location = new System.Drawing.Point(115, 251);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(679, 121);
+            this.groupBox1.Size = new System.Drawing.Size(582, 121);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Phép toán";
             // 
-            // btCong
-            // 
-            this.btCong.Location = new System.Drawing.Point(50, 43);
-            this.btCong.Name = "btCong";
-            this.btCong.Size = new System.Drawing.Size(50, 50);
-            this.btCong.TabIndex = 0;
-            this.btCong.Text = "+";
-            this.btCong.UseVisualStyleBackColor = true;
-            this.btCong.Click += new System.EventHandler(this.btCong_Click);
-            // 
-            // btTru
-            // 
-            this.btTru.Location = new System.Drawing.Point(178, 43);
-            this.btTru.Name = "btTru";
-            this.btTru.Size = new System.Drawing.Size(50, 50);
-            this.btTru.TabIndex = 1;
-            this.btTru.Text = "-";
-            this.btTru.UseVisualStyleBackColor = true;
-            this.btTru.Click += new System.EventHandler(this.btCong_Click);
-            // 
-            // btNhan
-            // 
-            this.btNhan.Location = new System.Drawing.Point(313, 43);
-            this.btNhan.Name = "btNhan";
-            this.btNhan.Size = new System.Drawing.Size(50, 50);
-            this.btNhan.TabIndex = 2;
-            this.btNhan.Text = "*";
-            this.btNhan.UseVisualStyleBackColor = true;
-            this.btNhan.Click += new System.EventHandler(this.btCong_Click);
-            // 
             // btChia
             // 
+            this.btChia.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btChia.Location = new System.Drawing.Point(452, 43);
             this.btChia.Name = "btChia";
             this.btChia.Size = new System.Drawing.Size(50, 50);
             this.btChia.TabIndex = 3;
             this.btChia.Text = "/";
-            this.btChia.UseVisualStyleBackColor = true;
+            this.btChia.UseVisualStyleBackColor = false;
             this.btChia.Click += new System.EventHandler(this.btCong_Click);
+            // 
+            // btNhan
+            // 
+            this.btNhan.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btNhan.Location = new System.Drawing.Point(313, 43);
+            this.btNhan.Name = "btNhan";
+            this.btNhan.Size = new System.Drawing.Size(50, 50);
+            this.btNhan.TabIndex = 2;
+            this.btNhan.Text = "*";
+            this.btNhan.UseVisualStyleBackColor = false;
+            this.btNhan.Click += new System.EventHandler(this.btCong_Click);
+            // 
+            // btTru
+            // 
+            this.btTru.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btTru.Location = new System.Drawing.Point(178, 43);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(50, 50);
+            this.btTru.TabIndex = 1;
+            this.btTru.Text = "-";
+            this.btTru.UseVisualStyleBackColor = false;
+            this.btTru.Click += new System.EventHandler(this.btCong_Click);
+            // 
+            // btCong
+            // 
+            this.btCong.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btCong.Location = new System.Drawing.Point(50, 43);
+            this.btCong.Name = "btCong";
+            this.btCong.Size = new System.Drawing.Size(50, 50);
+            this.btCong.TabIndex = 0;
+            this.btCong.Text = "+";
+            this.btCong.UseVisualStyleBackColor = false;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // Form1
             // 
@@ -159,7 +163,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Calculator";
             this.groupBox1.ResumeLayout(false);
