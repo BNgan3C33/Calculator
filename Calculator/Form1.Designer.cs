@@ -74,6 +74,7 @@
             // 
             // txtNo1
             // 
+            this.txtNo1.BackColor = System.Drawing.SystemColors.Window;
             this.txtNo1.Location = new System.Drawing.Point(237, 61);
             this.txtNo1.Name = "txtNo1";
             this.txtNo1.Size = new System.Drawing.Size(149, 30);
@@ -154,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(882, 424);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtResult);
@@ -164,8 +165,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
